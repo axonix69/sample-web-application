@@ -4,7 +4,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Customer Data</title>
+    <title>Customer Personal Data</title>
 </head>
 <body>
     <h1>Thanks for signing up with us!</h1>
