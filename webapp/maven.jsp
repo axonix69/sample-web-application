@@ -24,7 +24,7 @@ several projects, each with their own Ant build files, that were all
 slightly different. JARs were checked into CVS. We wanted a standard
 way to build the projects, a clear definition of what the project
 consisted of, an easy way to publish project information, and a way to
-share JARs across several projects.</p>
+share JARs / WARs / TARs across several projects.</p>
 <p>The result is a tool that can now be used for building and managing any
 Java-based project. We hope that we have created something that will
 make the day-to-day work of Java developers easier and generally help

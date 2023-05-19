@@ -13,14 +13,11 @@ import javax.servlet.http.HttpServletResponse;
  * Time: 16:23
  * http://www.crossvista.com
  */
-public class LoginServlet extends HttpServlet
-{
-  public static String login = "?", password = "?", error;
+public class LoginServlet extends HttpServlet {
+    public static String login = "?", password = "?", error;
 
-  public void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, java.io.IOException
-  {
-    try
-    {
+    public void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, java.io.IOException {
+        try {
 /*
            Set<String> paramNames = request.getParameterMap().keySet();
 
@@ -31,8 +28,8 @@ public class LoginServlet extends HttpServlet
            }
 */
 
-      login = request.getParameter("un");
-      password = request.getParameter("pw");
+            login = request.getParameter("un");
+            password = request.getParameter("pw");
 
 
 /*
@@ -44,12 +41,10 @@ public class LoginServlet extends HttpServlet
       out.println("</script>");
       out.println("</body></html>");
 */
-       response.sendRedirect(request.getContextPath()+"/logged.jsp");
+            response.sendRedirect(request.getContextPath() + "/logged.jsp");
+        } catch (Throwable theException) {
+            error = theException.getMessage();
+            response.sendRedirect(request.getContextPath() + "/error.jsp");
+        }
     }
-    catch(Throwable theException)
-    {
-      error = theException.getMessage();
-      response.sendRedirect(request.getContextPath()+"/error.jsp");
-    }
-  }
 }
