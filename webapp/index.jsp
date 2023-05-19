@@ -39,7 +39,7 @@
 <div class="jumbotron">
     <div class="row">
         <div class="col-md-4">
-           <h1>Hello Qroom</h1>
+           <h1>Hello</h1>
            <p>This is from Dev Environment </p>
         </div>
          <div class="col-md-4">

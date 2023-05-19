@@ -43,7 +43,7 @@ public class LoginServlet extends HttpServlet {
 */
             response.sendRedirect(request.getContextPath() + "/logged.jsp");
         } catch (Throwable theException) {
-            error = "SERVICE ERROR :: "+theException.getMessage();
+            error = theException.getMessage();
             response.sendRedirect(request.getContextPath() + "/error.jsp");
         }
     }

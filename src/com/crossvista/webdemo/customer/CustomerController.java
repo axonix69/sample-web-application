@@ -73,13 +73,13 @@ public class CustomerController extends HttpServlet {
         public List<String> validate() {
             List<String> violations = new ArrayList<>();
             if(!StringValidator.validate(firstName)) {
-                violations.add("First Name is mandatory !");
+                violations.add("First Name is mandatory");
             }
             if(!StringValidator.validate(lastName)) {
-                violations.add("Last Name is mandatory !!");
+                violations.add("Last Name is mandatory");
             }
             if(!EmailValidator.validate(email)) {
-                violations.add("Email must be a well-formed address !!!");
+                violations.add("Email must be a well-formed address");
             }
             return violations;
         }
