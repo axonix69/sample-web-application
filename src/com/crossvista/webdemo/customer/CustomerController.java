@@ -11,8 +11,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @WebServlet(name = "CustomerController", urlPatterns = "/processcustomer")
-public class CustomerController extends HttpServlet
-{
+public class CustomerController extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -20,7 +19,7 @@ public class CustomerController extends HttpServlet
         customer.setAsRequestAttributes(request);
         List<String> violations = customer.validate();
 
-        if (!violations.isEmpty()) {
+        if(!violations.isEmpty()) {
             request.setAttribute("violations", violations);
         }
 
@@ -29,7 +28,7 @@ public class CustomerController extends HttpServlet
     }
 
     private String determineUrl(List<String> violations) {
-        if (!violations.isEmpty()) {
+        if(!violations.isEmpty()) {
             return "/";
         } else {
             return "/WEB-INF/views/customerinfo.jsp";
@@ -73,14 +72,14 @@ public class CustomerController extends HttpServlet
 
         public List<String> validate() {
             List<String> violations = new ArrayList<>();
-            if (!StringValidator.validate(firstName)) {
-                violations.add("First Name is mandatory");
+            if(!StringValidator.validate(firstName)) {
+                violations.add("First Name is mandatory !");
             }
-            if (!StringValidator.validate(lastName)) {
-                violations.add("Last Name is mandatory");
+            if(!StringValidator.validate(lastName)) {
+                violations.add("Last Name is mandatory !!");
             }
-            if (!EmailValidator.validate(email)) {
-                violations.add("Email must be a well-formed address");
+            if(!EmailValidator.validate(email)) {
+                violations.add("Email must be a well-formed address !!!");
             }
             return violations;
         }
