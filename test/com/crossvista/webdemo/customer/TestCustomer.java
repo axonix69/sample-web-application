@@ -21,4 +21,13 @@ public class TestCustomer extends BaseTest {
         Assert.assertEquals(CustomerField.EMAIL.getValue(), customer.getEmail());
     }
 
+
+    @Test
+    public void deleteCustomer() {
+
+        // @todo it
+
+    }
+
+
 }

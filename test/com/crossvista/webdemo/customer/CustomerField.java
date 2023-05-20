@@ -4,7 +4,7 @@ public enum CustomerField {
 
     FNAME("Johnny"),
     LNAME("Walker"),
-    EMAIL("johnny.walker@crossvista.su");
+    EMAIL("johnny.walker@crossvista.com");
 
     private String value;
 
