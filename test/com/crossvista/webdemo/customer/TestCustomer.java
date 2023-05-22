@@ -25,7 +25,7 @@ public class TestCustomer extends BaseTest {
     @Test
     public void deleteCustomer() {
 
-        // @todo it
+        // @todo it    more tests here
 
     }
 
