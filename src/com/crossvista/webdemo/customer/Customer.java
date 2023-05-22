@@ -5,6 +5,7 @@ public class Customer {
     private String firstName;
     private String lastName;
     private String email;
+    private String phone;
 
     public Customer() {
 
@@ -40,9 +41,12 @@ public class Customer {
         this.email = email;
     }
 
+    public String getPhone() {
+        return phone;
+    }
 
-    public void doh(){
-        // too dooch
+    public void setPhone(String phone) {
+        this.phone = phone;
     }
 
 

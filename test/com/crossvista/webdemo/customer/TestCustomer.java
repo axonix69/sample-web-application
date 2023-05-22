@@ -19,6 +19,7 @@ public class TestCustomer extends BaseTest {
         Assert.assertEquals(CustomerField.FNAME.getValue(), customer.getFirstName());
         Assert.assertEquals(CustomerField.LNAME.getValue(), customer.getLastName());
         Assert.assertEquals(CustomerField.EMAIL.getValue(), customer.getEmail());
+        Assert.assertEquals(CustomerField.PHONE.getValue(), customer.getPhone());
     }
 
 
@@ -26,6 +27,7 @@ public class TestCustomer extends BaseTest {
     public void deleteCustomer() {
 
         // @todo it    more tests here
+        // test me more
 
     }
 
