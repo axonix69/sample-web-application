@@ -25,11 +25,14 @@ public class TestCustomer extends BaseTest {
 
     @Test
     public void deleteCustomer() {
-
-        // @todo it    more tests here
-        // test me more
-
+        System.out.println("delete content from ALPHA");
     }
+
+    @Test
+    public void testFromAlpha() {
+        System.out.println("test on ALPHA something");
+    }
+
 
 
 }
