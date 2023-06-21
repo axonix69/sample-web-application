@@ -22,14 +22,8 @@ public class TestCustomer extends BaseTest {
     }
 
     @Test
-    @ConcurrentlyCollidedNode()
-    public void deleteCustomer_COLLIDED() {
-        System.out.println("delete content from BETA - BETA");
-    }
-
-    @Test
     public void deleteCustomer() {
-        System.out.println("delete content from ALPHA");
+        System.out.println("delete content from ALPHA and BETA");
     }
 
     @Test
@@ -38,7 +32,6 @@ public class TestCustomer extends BaseTest {
     }
 
     @Test
-    @ConcurrentlyAddedNode()
     public void moreTestFromBETA() {
         System.out.println("test on BETA now !!!");
     }
